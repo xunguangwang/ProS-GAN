@@ -13,25 +13,35 @@ Notably, other versions may be also OK, but we didn't verify it.
 
 #### Train hashing models
 Specify the hyper-parameters in hashing.py, and then run
->python hashing.py
+```
+python hashing.py
+```
 
 #### Attack by P2P or DHTA
 Specify the hyper-parameters in dhta.py, and then run
->python dhta.py
+```
+python dhta.py
+```
 
 #### Train ProS-GAN
 Specify the hyper-parameters in main.py, and then run
->python main.py --train True
+```
+python main.py --train True
+```
 
 #### Evaluate ProS-GAN
 Specify the hyper-parameters in main.py, and then run
->python main.py --train False --test True
+```
+python main.py --train False --test True
+```
 
 ## Cite
 If you find this work is useful, please cite the following:
->@inproceedings{wang2021prototype,
+```
+@inproceedings{wang2021prototype,
 	title={Prototype-supervised Adversarial Network for Targeted Attack of Deep Hashing},
 	author={Wang, Xunguang and Zhang, Zheng and Wu, Baoyuan and Shen, Fumin and Lu, Guangming},
 	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
 	year={2021}
 }
+```

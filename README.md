@@ -7,30 +7,29 @@ This is the code for our CVPR 2021 paper "Prototype-supervised Adversarial Netwo
 - Pytorch 1.6.0
 - Numpy 1.18.5
 - Pillow 7.1.2
-- CUDA
+- CUDA 10.2
 
-Notably, other versions may be also OK, but we didn't verify it.
 
 #### Train hashing models
-Specify the hyper-parameters in hashing.py, and then run
+Initialize the hyper-parameters in hashing.py following the paper, and then run
 ```
 python hashing.py
 ```
 
 #### Attack by P2P or DHTA
-Specify the hyper-parameters in dhta.py, and then run
+Initialize the hyper-parameters in dhta.py following the paper, and then run
 ```
 python dhta.py
 ```
 
 #### Train ProS-GAN
-Specify the hyper-parameters in main.py, and then run
+Initialize the hyper-parameters in main.py following the paper, and then run
 ```
 python main.py --train True
 ```
 
 #### Evaluate ProS-GAN
-Specify the hyper-parameters in main.py, and then run
+Initialize the hyper-parameters in main.py following the paper, and then run
 ```
 python main.py --train False --test True
 ```

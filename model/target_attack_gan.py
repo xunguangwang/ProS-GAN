@@ -188,7 +188,7 @@ class TargetAttackGAN(nn.Module):
     def train_prototype_net(self, train_loader, target_labels, num_train):
         optimizer_l = torch.optim.Adam(self.prototype_net.parameters(), lr=self.args.lr, betas=(0.5, 0.999))
         epochs = self.args.n_epochs * 2
-        epochs = 1
+        epochs = 100
         steps = 300
         batch_size = 64
         lr_steps = epochs * steps
